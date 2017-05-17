@@ -21,8 +21,8 @@ function mapStateToProps ({file}, {...props}) {
 }
 function mapDispatchToProps (dispatch) {
   return {
-    fetchPath: (fileName) => dispatch(fetchPath(fileName)),
-    updateFile: (content, sha, path, message) => dispatch(updateFile(content, sha, path, message)),
+    fetchPath: (fileName, token) => dispatch(fetchPath(fileName, token)),
+    updateFile: (content, sha, path, message, token) => dispatch(updateFile(content, sha, path, message, token)),
   }
 }
 export default connect(
