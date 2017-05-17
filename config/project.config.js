@@ -24,8 +24,8 @@ const config = {
   // ----------------------------------
   // Server Configuration
   // ----------------------------------
-  server_host : "localhost", // use string 'localhost' to prevent exposure on local network
-  server_port : 8080,
+  server_host : "0.0.0.0", // use string 'localhost' to prevent exposure on local network
+  server_port : 3000,
 
   // ----------------------------------
   // Compiler Configuration
@@ -39,7 +39,7 @@ const config = {
   compiler_hash_type       : 'hash',
   compiler_fail_on_warning : false,
   compiler_quiet           : false,
-  compiler_public_path     : '/',
+  compiler_public_path     : '/app',
   compiler_stats           : {
     chunks : false,
     chunkModules : false,

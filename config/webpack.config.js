@@ -19,7 +19,8 @@ const webpackConfig = {
     root       : project.paths.client(),
     extensions : ['', '.js', '.jsx', '.json']
   },
-  module : {}
+  module : {},
+  watchOptions: { poll: true }
 }
 // ------------------------------------
 // Entry Points
