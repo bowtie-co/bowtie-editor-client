@@ -21,7 +21,7 @@ export default class OAuthCallback extends Component {
     let params = new URLSearchParams(window.location.search)
     if (params.has('code')) {
       axios.request({
-        url: `http://localhost:6013/auth/${params.get('code')}`, 
+        url: `http://localhost:60713/auth/${params.get('code')}`, 
         method: 'GET',
       })
       .then(function (response) {
