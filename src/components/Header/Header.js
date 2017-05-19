@@ -1,5 +1,5 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import { IndexLink, Link, browserHistory } from 'react-router'
 import './Header.sass'
 
 export const Header = () => (
@@ -12,6 +12,13 @@ export const Header = () => (
     <Link to='/project' activeClassName='route--active'>
     Project
     </Link>
+    <br />
+    <a href="#" onClick={() => {
+      window.localStorage.removeItem('githubKey')
+      browserHistory.push("/")
+    }}>
+    Logout
+    </a>
   </div>
 )
 
